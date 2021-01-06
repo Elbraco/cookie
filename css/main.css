@@ -1,0 +1,1061 @@
+/* RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ********************************************* */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+  
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+/* ********************************************* */
+/* COLOR */
+h1,  h2, .littlenav a,.container-crous h3, .container-crous h2 span,.savoure a,.bignav a:hover {
+    color: rgb(233, 72, 67);
+}
+.container-crous h3:hover,.txtcookie strong,.container-savoureux strong,.savoure h2, .savoure article a:hover, a#connect:hover, a.shop:hover {
+    color: rgb(238, 169, 20);
+}
+.txtcookie p,footer section,footer p  {
+    color: rgb(105, 105, 108);
+}
+a.miam,.container-crous article span a,.container-savoureux h2,.container-savoureux article h3,.container-savoureux article p, .container-savoureux article:after,.container-plaisir figure figcaption, .container-plaisir figure figcaption a, .container-plaisir a:last-child, nav.social a,.container-crous article span a{
+       
+    color: rgba(255,255,255,1);
+
+}
+/* ********************************************* */
+
+/* POLICE */
+.littlenav, .txtcookie p, .container-crous a, .container-crous span, .container-crous article p,.container-savoureux article p,footer section h5,footer address, footer p,.savoure a {
+    
+    font-family: 'Overlock', cursive;
+}
+.bignav a, h1, .miam,h2,.container-crous h2 span,h3,.container-savoureux article:nth-child(2)::after,.container-savoureux article:nth-child(3)::after,.container-savoureux article:nth-child(4)::after,.container-savoureux article:nth-child(5)::after,.container-plaisir article, figcaption a, .savoure h4,nav.social a,.container-plaisir a:last-child {
+    font-family: 'Fredoka One', cursive;
+}
+.txtcookie strong, .savoure h2{
+    font-family: 'Cookie', cursive;
+ }
+/* ********************************************* */
+
+ /*FONT-SIZE*/
+ .container-savoureux article p,footer address,.bignav a,.txtcookie p,.container-crous span,.container-crous article p  {
+    font-size: 1.4rem;
+ }
+
+ .container-crous h2 span,.container-savoureux article:nth-child(2)::after,.container-savoureux article:nth-child(3)::after, .container-savoureux article:nth-child(4)::after,.container-savoureux article:nth-child(5)::after,.main-nav a.icon{
+    font-size: 2rem;
+ }
+
+ .container-crous  article span a,.container-plaisir figure figcaption, .container-plaisir figure figcaption a, .savoure h4,nav.social a,.savoure h4{
+    font-size: 1.5rem;
+
+ }
+
+ .littlenav,.savoure a,footer p {
+    
+    font-size: 1.2rem;
+ }
+/* ********************************************* */
+ 
+    
+ /* HOVER */
+ .logo:hover{
+    top: 2rem;
+}
+.container-plaisir figure:hover .bigbig{
+    top: 85%;
+}
+.container-plaisir figure:hover figcaption:not(.bigbig){
+	top: 70%;
+}
+nav.social a:hover{
+    opacity: 0.7;
+}
+
+.miam:hover,.container-crous article img:hover, .container-savoureux article img:hover, .container-plaisir a:last-child:hover{
+    opacity: 0.5;
+}
+
+
+ .container-crous article span a:hover {
+     opacity: 1;
+     background: rgb(238, 169, 20);
+
+ }
+ /* UPPERCASE */
+ .miam,h1,.container-crous h2,.container-plaisir h2, .savoure h4,nav.socialfooter section h5,.bignav a {
+    text-transform: uppercase;
+
+}
+/* ********************************************* */
+/* GLOBAL */
+
+.container-crous, .container-savoureux, .container-bigcookie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+ }
+
+header{
+    background: url("../images/bg-header.gif") no-repeat;
+    background-position: top ;
+    background-size: initial;   
+    border-bottom: 1px solid lightgray; 
+}
+
+
+.container-bigcookie, .container-crous,.main-nav,.container-savoureux,.containerplaisirsavoure {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main-nav{
+    position: relative;
+}
+
+
+.littlenav {
+    text-align: right;
+    padding: 2rem 2.3rem 0.9rem 2.3rem;
+
+}
+.fa, .fas{
+    display: none;
+}
+.littlenav a {
+    text-decoration: none;
+    padding-left: 2rem;
+
+}
+
+/* icon user */
+a#connect::before{
+    content: url("../images/icon-user.png");
+    padding-right: 0.8rem;
+    vertical-align: top;
+}
+/* langue */
+/* fr */
+.littlenav a:first-child{
+    padding-left: 0.5rem;
+    vertical-align: top;
+}
+/* en */
+.littlenav a:nth-child(2){
+    padding-left: 0.5rem;
+    padding-right: 0.4rem;
+    vertical-align: top;
+
+}
+.littlenav::before{
+    content: 'Langue';
+    color: black;
+}
+/* panier */
+.shop {
+    font-weight: bold;
+}
+a.shop img {
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* --------- */
+
+
+
+.bignav {
+     border-radius: 5px;
+    background:  url("../images/pat-menu.gif");
+    padding: 1.5rem 0 1.9rem 0;
+}
+.main-nav::after{
+    content: url("../images/ombre-nav.png")  ;
+}
+/* ecart - histoire x secrets */
+.bignav a:nth-child(4) {
+    margin-left: 22.5rem; 
+}
+
+
+.bignav a {
+    color: rgb(41, 136, 140);
+    text-decoration: none;
+    margin-left: 1.2rem; 
+    transition: 0.5s color ease-in-out;
+
+}
+.bignav a:first-child{
+    margin-left: 2rem;
+}
+.bignav a:first-child::after, .bignav a:nth-child(2)::after, .bignav a:nth-child(4)::after{
+   content: url("../images/img-sep.png");
+   padding-left: 0.8rem;
+   vertical-align: text-bottom;
+}
+
+.logo{
+    position: absolute;
+    top: 1rem;
+    left: 40%;
+    margin-left: 0.8rem;
+    transition: top 0.5s ease-out;
+
+}
+.logo img {
+    width: 100%;
+
+}
+/* Photo cookie */
+  .bigcookie{
+      margin-left: 6rem;
+  }
+  /* Photo cookie + .txtcookie */
+  .container-bigcookie{
+      background: url("../images/img-planche.png") no-repeat ; 
+      background-position-y: 100% ;
+      background-size: contain;    
+      justify-content: space-between;
+      padding-top: 2rem;
+      padding-bottom: 9.5rem; 
+
+  }
+
+.txtcookie {
+    width: 53%;
+    margin-right: 0.7rem;
+    align-self: flex-end;
+    position: relative;
+    
+}
+.txtcookie p {
+    margin-left: 0.8rem;
+    margin-bottom: 3.6rem;
+    line-height: 1.6rem;
+}
+.txtcookie img:last-child{
+    position: relative;
+   margin-left: 4rem;
+   vertical-align: top;
+}
+
+/* fleche miam */
+.miam {
+    position: absolute;
+    text-decoration:none;
+    top: 49%;
+    left: 37%;
+    font-size: 1.3rem;
+    margin-left: 3.3rem;
+    padding: 2rem 6rem;
+    background: url("../images/btn-gocart.png") no-repeat center;
+    transition: 0.3s opacity ease-in-out;
+}
+
+
+ h1 {
+     font-size: 7.2rem;
+     line-height: 6.8rem;
+ }
+ 
+
+ .txtcookie strong {
+     font-size: 5.3rem;
+     line-height: 4rem;
+ }
+ 
+
+ 
+
+ /* SI BONS, SI CROUSTILLANTS ... */
+
+ .container-crous {
+     margin-top: 3.5rem;
+     margin-bottom: 4rem;
+     text-align: center;
+      
+ }
+ .container-crous article, .container-savoureux article{
+    width: 23%;
+    margin-right: 1.9rem;
+
+} 
+ .container-crous article img {
+     border-bottom: 1px rgb(233, 72, 67) solid;
+     transition: ease-in 0.5s opacity;
+ }
+ 
+
+.container-crous h2 span{
+    font-weight: bold;
+    background-color: white;
+    padding: 1rem;
+
+}
+
+
+ .container-crous h2  {
+     flex-basis: 100%;
+     margin-bottom: 1rem;
+     background: url(../images/sep-titre-rouge.jpg) center repeat-x;
+
+ }
+ 
+.container-crous article a {
+    text-decoration: none;
+}
+ h3{
+     font-size: 1.6rem;
+     margin-top: 0.5rem;
+     text-decoration: none;
+     transition: color 0.5s ease-in-out;
+     margin-bottom: 1.5rem;
+ }
+ 
+ 
+ .container-crous span {
+     font-weight: bold;
+     color: #69696c;
+ }
+ 
+ .container-crous  article span a {
+     background-color: rgb(233, 72, 67);
+     padding: 0.5rem;
+     transition: background 0.3s ease-in-out;
+ }
+ 
+
+ 
+ .container-crous article p {
+     margin-top: 1.5rem;
+     text-align: center;
+     color: #69696c;
+
+ }
+ .container {
+    background-color: rgb(233, 72, 67);
+    
+}
+
+/* Pourquoi sont-ils si savoureux ... */
+
+ .container-savoureux {
+    background: url("../images/bg-down-arrow.jpg") no-repeat top ;
+    padding-top: 1rem;
+    position: relative;
+
+ }
+ 
+ .container-savoureux article img{
+     transition: 0.3s opacity ease-in-out;
+ }
+ 
+ 
+ .container-savoureux h2 {
+     text-align: center;
+     font-size: 2.2rem;
+     padding-top: 2.5rem;
+     padding-bottom: 2rem;
+     flex-basis: 100%;
+ }
+ 
+ 
+ .container-savoureux strong {
+     margin-left: 1rem;
+ }
+ .container-savoureux article h3 {
+     font-size: 1.6rem;
+     margin-top: 2.5rem;
+ }
+ 
+ .container-savoureux article {
+     text-align: center;
+     position: relative;
+     padding-bottom: 5rem;
+     
+ }
+
+ .container-savoureux article p {
+     margin-top: 1.5rem;
+
+ }
+ /* numéro sur figure */
+ .container-savoureux article:nth-child(2)::after, .container-savoureux article:nth-child(3)::after, .container-savoureux article:nth-child(4)::after,.container-savoureux article:nth-child(5)::after{
+    padding: 10px 15px;
+    background: url("../images/icon-bulle-num.png") no-repeat;
+    position: absolute;
+
+ }
+
+ 
+ .container-savoureux article:nth-child(2)::after{
+    content: "1";
+    top: 50%;
+    left: 38%;
+
+ }
+ 
+ .container-savoureux article:nth-child(3)::after{
+    content: "2";
+    top: 50%;
+    left: 40%;
+     }
+
+     
+ .container-savoureux article:nth-child(4)::after{
+    content: "3";
+    top: 50%;
+    left: 40%;
+         }
+         
+ .container-savoureux article:nth-child(5)::after{
+    content: "4";
+    top: 50%;
+    left: 40%;
+}
+/*  */
+
+.container-savoureux article:nth-child(2)::before{
+    content: url("../images/sprite-fleches.png");
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    z-index: 1;
+
+}
+
+/* TOUT CE QU'IL FAUT ... + Savourez en toute liberté */
+.containerplaisirsavoure{
+   
+    background: url("../images/img-down-arrow-red.jpg") no-repeat;
+    background-position: top;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  
+}
+/* TOUT CE QU'IL FAUT ...  */
+.container-plaisir{
+    display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  position: relative;
+
+}
+.container-plaisir h2{
+    font-size: 1.9rem;
+    width: 100%;
+    
+}
+
+.container-plaisir figure{
+    display: block;
+	position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid red;
+    float: left;
+    margin-right: 2rem;
+}
+
+.container-plaisir figure:nth-child(5),.container-plaisir figure:nth-child(6), .container-plaisir figure:nth-child(7){
+    margin-top: 2rem;
+}
+.container-plaisir :nth-child(5) img
+{
+vertical-align: super;}
+
+
+.container-plaisir figure figcaption:not(.bigbig){
+    position: absolute;
+    display: block;
+    background: url("../images/bg-hover-product-min.png") no-repeat;
+    width: 100%;
+	transition: all 0.5s;
+    top: 100%;
+    padding: 1rem;
+
+}
+.container-plaisir figure figcaption{
+    text-align: center;
+}
+.container-plaisir figure figcaption, .container-plaisir figure figcaption a {
+    text-decoration: none;
+}
+.container-plaisir a:last-child {
+    font-size: 1.3rem;
+    background: url("../images/btn-voir-catalogue.png") no-repeat;
+    text-decoration: none;
+    padding: 0.6rem 1.7rem;
+    transition: opacity 0.3s ease-in;
+}
+
+.bigbig{
+    position: absolute;
+    display: block;
+    background: url("../images/bg-hover-product-big.png") no-repeat;
+    width: 100%;
+	transition: all 0.5s;
+    top: 100%;
+    padding: 1rem 0 2rem 0rem;
+
+
+}
+
+
+
+/* voir le catalogue */
+.catalogue{
+    clear: both;
+    float: right;
+    margin: 2.5rem 2rem 2rem 0;
+
+}
+
+
+
+/* Savourez en toute liberté */
+
+.savoure {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+.savoure h2 {
+    width: 100%;
+    font-size: 3.5rem;
+    margin-bottom: 1.2rem;   
+     background: url("../images/sep-titre-orange.jpg") center repeat-x;
+
+}
+
+
+.savoure h2 span {
+    background-color: white;
+    padding: 1rem;
+}
+.savoure h4{
+    color: rgb(41, 136, 140);
+    padding: 5.5rem 0.7rem 4rem 0.7rem;
+    line-height: 1.9rem;
+   
+}
+
+
+.savoure article{
+    background: url("../images/bg-etiquette.jpg") no-repeat center;
+    float: left;
+    width: 31%;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.savoure article:nth-child(2) img {
+    padding-bottom: 4rem;
+}
+
+.savoure article:nth-child(3) img {
+    padding-bottom: 4.5rem;
+}
+
+.savoure article:nth-child(4) img {
+    padding-bottom: 2.5rem;
+}
+
+
+.savoure article a {
+    display: block;
+    padding-bottom: 4.5rem;
+    transition: 0.3s color ease-in;
+}
+
+/* facebook - twitter */
+nav.social {
+    clear: both;
+    text-align: initial;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+nav.social a{
+    text-decoration: none;
+    padding: 3.5rem 3rem 1rem 7.5rem;
+    display: block;
+    border-radius: 4%;
+    width: 46%;
+    margin-right: 2rem;
+    transition: 0.3s opacity ease-in;
+}
+
+
+
+nav.social a:first-child {
+    background: url('../images/icon-facebook.png') no-repeat;
+    background-color: rgb(59, 89, 153);
+    background-position: 15% 50%;
+    
+
+}
+
+nav.social a:nth-child(2){
+
+    background: url('../images/icon-twitter.png') no-repeat;
+    background-color: rgb(0, 173, 237);
+    background-position: 15% 50%;
+   
+}
+
+footer{
+background: url("../images/bg-rayures.jpg");
+position: relative;
+margin-top: 6rem;
+padding-bottom: 1rem;
+}
+
+.logo-foot{
+    background: url(../images/img-planche-footer.jpg) 0 3.5rem repeat-x;
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: -15%;
+    z-index: 1000;
+
+
+}
+.logo-foot img{
+    display: block;
+    margin: 0 auto;
+
+    
+}
+
+footer section {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 6.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+
+}
+ footer section:nth-child(2) {
+    background: url("../images/pat-menu.gif");
+    width: 30rem;
+    margin: 0 auto;
+   
+}
+
+footer section h5 {
+    font-size: 1.7rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    
+}
+footer address {
+    display: block;
+    width: 38%;
+    margin: 1rem auto;
+} 
+
+footer p {
+    text-align: center;
+}
+
+footer p:first-child{
+    font-weight: bold;
+}
+.license {
+    line-height: 1.5rem;
+}
+
+footer section:nth-child(2)::after{
+    content: url("../images/bg-ombre-address.png");
+    position: absolute;
+    top: 100%;
+    left: 0%;
+
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX MEDIA QUERIES 950PX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* tablette */
+@media screen and (max-width: 950px) {
+    .main-nav {
+        box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+
+    }
+    
+    .main-nav::after{
+        content: none;
+
+    }
+    .bignav  {
+        display: flex;
+        justify-content: space-around;
+    }
+    .bignav a {
+        margin-left: 0.2rem;
+        font-size: 1rem;
+    }
+    .bignav a:nth-child(4) {
+        margin-left: 23.5rem;
+    }
+    .littlenav a {
+        padding-left: 0.5rem;
+    }
+    .bignav a:first-child::after, .bignav a:nth-child(2)::after, .bignav a:nth-child(4)::after{
+        padding: 1rem;
+        vertical-align: sub;
+    }
+    .txtcookie{
+        width: 42%;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    .txtcookie img {
+        display:none ;
+    }
+    .txtcookie a.miam{
+        top: 90%;
+        left: 0%;
+    }
+    
+    .container-crous img,.container-savoureux img{
+        width: 100%;
+    }
+    .container-crous article{
+        margin-right: 1rem;
+    }
+    .container-savoureux article:last-child{
+        margin-right: initial;
+    }
+
+    .container-plaisir{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.container-plaisir figure{
+    width: 30%;
+}
+
+.container-plaisir figure figcaption{
+    display: block;
+}
+.container-plaisir figure figcaption:not(.bigbig){
+    position: initial;
+    background-image: url("../images/bg-hover-product-big.png");
+}
+.bigbig{
+    position: initial;
+    padding-bottom: 0.9rem;
+    
+}
+.container-crous h2{
+    background-position-y: 24%;
+}
+.container-crous h2 span{
+    padding: initial;
+}
+.container-plaisir figure figcaption{
+    top: 83%;
+}
+.container-bigcookie{
+    background-position-y: 92%;
+    padding-top: 3rem;
+
+}
+
+
+    .container-savoureux article:nth-child(4)::after,.container-savoureux article:nth-child(3)::after,.container-savoureux article:nth-child(2)::after,.container-savoureux article:nth-child(5)::after{
+    top: 44%;
+    }
+    .container-savoureux article:nth-child(2)::before{
+        content: none;
+    }
+    .container-plaisir figure:nth-child(5) img{
+        width: 100%;
+    }
+    .containerplaisirsavoure{
+        margin: 0rem 2rem;
+    }
+    .savoure{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+       
+    }
+    .savoure  article h4{
+        width: 30%;
+        margin:  auto;
+        padding-top: 7rem;
+    }
+    .savoure article:nth-child(3) img {
+        padding-bottom: 2rem;
+    }
+    nav.social a:nth-child(2) {
+        background-position: 8% 50%;
+    }
+
+    footer section:nth-child(2)::after {
+        left: 0%;
+    }
+
+    
+}
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX MEDIA QUERIES 700PX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* phone */
+
+ @media screen and (max-width: 780px) {
+     
+     .fa, .fas{
+        display: block;
+        font-size: 3rem;
+    }
+     .bignav::after{
+         content: none;
+     }
+    .bignav a{
+        display: none;
+    }
+    
+
+    .bignav{
+        box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .bignav a.icon {
+      display: block;
+      position: absolute;
+    right: 1%;
+    top: 45%;
+    }
+    
+    .bignav a{
+        margin-left: 1.3rem;
+    }
+ 
+    .bignav.responsive {
+        position: relative;
+        padding-bottom: 0;
+    }
+    .bignav.responsive .icon{
+      position: absolute;
+      right: 1%;
+      top: 0%;
+    }
+    .bignav.responsive a {
+      float: none;
+      display: block;
+    }
+    
+   .bignav{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 2rem 4rem;
+
+   }
+   
+.bignav a:nth-child(4) {
+ margin-left: initial;
+}
+   .bignav a{
+    margin-left: initial;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+
+   }
+   .bignav a:first-child{
+       margin-left: initial;
+   }
+
+   .bignav a:not(.icon)::after{
+    content: url("../images/img-sep.png");
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    
+   }
+   .logo{
+       top: 0%;
+       left: 0%;
+       
+   }
+   .logo img{
+       width: 70%;
+   }
+   .logo a {
+    display: block;
+   }
+   .littlenav{
+       display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem 5rem 0rem 2.3rem;
+    margin-bottom: 1rem;
+}
+.container-crous article, .container-savoureux article{
+    margin: initial;
+}
+
+   
+   .littlenav a {
+       padding-left: 0.3rem;
+   }
+   .littlenav::before, a#connect::before{
+       content: none;
+   }
+   a.shop img{
+       display: none;
+   }
+
+   article.bigcookie img{
+       display: none;
+   }
+   .container-bigcookie{
+       background: none;
+       text-align: center;
+   }
+
+   .txtcookie{
+       width: 100%;
+       margin: 0 auto;
+   }
+   .txtcookie{
+       margin-top: 1.5rem;
+   }
+   .container-crous,.container-savoureux, .container-plaisir{
+       display: flex;
+       flex-direction: column;
+    align-items: center;       
+   }
+   .container-crous article, .container-savoureux article{
+       width: 100%;
+   }
+   .container-crous article p, .container-savoureux article p {
+       width: 80%;
+       margin: 1rem auto;
+   }
+
+   .container-crous h2 span{
+       padding: initial;
+   }
+   
+   .container-savoureux article:nth-child(2)::before {
+       content: none;
+   }
+
+   .container-savoureux article:nth-child(2)::after,.container-savoureux article:nth-child(3)::after{
+       top: 53%;
+       left: 46%;
+   }
+
+   .container-savoureux article:nth-child(4)::after,.container-savoureux article:nth-child(5)::after {
+       top: 55%;
+       left: 47%;
+   }
+
+   .container-crous img,.container-savoureux img{
+       width: initial;
+   }
+
+   .container-plaisir figure{
+       width: 100%;
+   }
+  .container-plaisir figure figcaption,.container-plaisir figure figcaption:not(.bigbig){
+      background-size: cover;
+  }
+  .container-plaisir figure:nth-child(5) img{
+      width: initial;
+  }
+  .container-plaisir figure{
+      width: 80%;
+  }
+  .savoure{
+      padding-top: 1.5rem;
+  }
+  .savoure article h4{
+      font-size: 1rem;
+      padding: initial;
+      line-height: 1.5rem;
+      padding: 6rem 0rem 3rem 0rem ;
+  }
+  
+  .savoure article:nth-child(4) img{
+    padding-bottom: 1.3rem;
+
+  }
+
+  .savoure article:nth-child(2) img{
+      padding-bottom: 2.5rem;
+      padding-top: 0.5rem;
+
+  }
+
+  .bignav.responsive .logo a{
+      margin-left: initial;
+  }
+} 
