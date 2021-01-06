@@ -58,9 +58,7 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  body {
-      background-color: green;
-  }
+  
 /* ********************************************* */
 /* COLOR */
 h1,  h2, .littlenav a,.container-crous h3, .container-crous h2 span,.savoure a,.bignav a:hover {
@@ -735,9 +733,7 @@ footer section:nth-child(2)::after{
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX MEDIA QUERIES 950PX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /* tablette */
 @media screen and (max-width: 950px) {
-    body {
-        background-color: blue;
-    }
+    
     .main-nav {
         box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
 
@@ -873,9 +869,6 @@ footer section:nth-child(2)::after{
 /* phone */
 
  @media screen and (max-width: 780px) {
-     body {
-         background-color: red;
-     }
      
      .fa, .fas{
         display: block;
