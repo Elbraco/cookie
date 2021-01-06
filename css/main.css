@@ -58,7 +58,9 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
+  body {
+      background-color: green;
+  }
 /* ********************************************* */
 /* COLOR */
 h1,  h2, .littlenav a,.container-crous h3, .container-crous h2 span,.savoure a,.bignav a:hover {
